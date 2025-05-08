@@ -1,0 +1,8 @@
+{
+    "name": "dev_day(25) Workshop: Auth-ing your GenAI",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node",
+    "containerEnv": {
+      "ENV": "dev"
+    },
+    "postCreateCommand": "bash .devcontainer/scripts/post-create.sh"
+  }
