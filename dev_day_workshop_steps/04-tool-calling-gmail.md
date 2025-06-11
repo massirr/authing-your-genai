@@ -146,4 +146,4 @@ Tool calls state: {
 
 ---
 
-With these you completed the workshop and are now ready for [the recap](06-recap.md).
+With these you completed the workshop and are now ready for [the recap](05-recap.md).
