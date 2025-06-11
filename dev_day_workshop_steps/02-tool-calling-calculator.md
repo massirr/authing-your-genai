@@ -69,4 +69,4 @@ And you should see the answer in the chat window like so:
 
 ---
 
-With these completed you are ready for [the next step](03-tool-calling-gmail.md).
+With these completed you are ready for [the next step](03-setting-up-google.md).
