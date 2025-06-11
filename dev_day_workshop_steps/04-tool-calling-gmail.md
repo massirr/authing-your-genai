@@ -128,9 +128,9 @@ export async function POST(req: NextRequest) {
 }
 ```
 
-And once you save the file you can ask Assistant0 to draft a response for you with the prompt "Now draft an answer to that email please"
+And once you save the file you can ask Assistant0 to draft a response for you with the prompt "Now draft an email to (insert email here) with this subject and this message"
 
--> TODO add image
+![](11-gmail-draft-tool-call.png)
 
 And you should the log of the tool call on your terminal running the server like so:
 
