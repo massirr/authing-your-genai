@@ -4,7 +4,7 @@ Now that Assistant0 has the Calculator and Gmail. 🎉🎉🎉
 
 In case you want to have some fun, here's an idea for an email draft for you to send later.
 
-Prompt: "Hey Assistant0, can you draft an email to my friend Jess (jessica.temporal@okta.com) to tell them I just completed the 'Authing your GenAI' workshop? Mention that now I know how tool calling works and I'm very excited to add even more features securely with Auth0 in my GenAI applications."
+Prompt: "Hey Assistant0, can you draft an email to my friend Jess (william.johnson@okta.com) to tell them I just completed the 'Authing your GenAI' workshop? Mention that now I know how tool calling works and I'm very excited to add even more features securely with Auth0 in my GenAI applications."
 
 The expected behavior:
 
