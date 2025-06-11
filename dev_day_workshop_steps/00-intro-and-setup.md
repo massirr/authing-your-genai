@@ -34,15 +34,19 @@ You can find instructions for other coding environments on the [README.md](TODO)
 
 Once the Codespace is ready and you have your OpenAI API key in `.env.local`, you'll be ready continue on.
 
-### Setting up your Auth0 account
+### Setting up your Auth for GenAI Auth0 account
 
-For this workshop you'll need an Auth0 account and a new Tenant specific for GenAI. Since Auth for GenAI is in Developer Preview for the moment so you'll need a new tentant as it will enable and configure some Auth0 features for you.
+For this workshop, you will need an Auth0 account, if you already have an Auth0 account you need a new Tenant to get the Auth For GenAI features.
+
+### Why do I need a new tentant?
+Since our "Auth for GenAI" feature is currently in Developer Preview, you must create a new tenant to ensure the necessary features are automatically enabled and configured for our session.
+
 
 [Navigate to this page](https://auth0.com/ai/docs/user-authentication) and follow the first two pre-requisites steps in the image below.
 
 ![](images/00-1-setup-auth0-account-and-app-auth-for-genai-enabled.png)
 
-Once you click **Create Account** you can also login to your account but you'll have to accept the terms and conditions and chose the region for your new tentant.
+Once you click **Create Account**, login to your account and accept the terms and conditions and chose the region for your new tentant.
 
 ![](images/00-2-setup-auth0-account-and-app-auth-for-genai-enabled.png)
 
