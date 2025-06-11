@@ -18,6 +18,6 @@ With that you learned what tool calling is, added 3 tools to your agent, and you
 Thank you for participating and don't forget to share what you learned and tag us!
 
 Show us what you build by tagging us on social!
-X [auth0](https://x.com/auth0)
-LinkedIn [Auth0](https://www.linkedin.com/company/auth0)
-GitHub [Auth0](https://github.com/auth0)
+* **X** [@auth0](https://x.com/auth0)
+* **LinkedIn** [Auth0](https://www.linkedin.com/company/auth0)
+* **GitHub** [Auth0](https://github.com/auth0)
