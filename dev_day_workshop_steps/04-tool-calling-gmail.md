@@ -84,7 +84,7 @@ Now test it!
 
 If your server is not running run `npm run dev`. Open your app, log in with Google, and try a prompt like: "Check my last unread email?"
 
-![](images/10-gmail-tool call.png)
+![](images/10-gmail-tool-call.png)
 
 And you should see this call on the terminal running your server:
 
