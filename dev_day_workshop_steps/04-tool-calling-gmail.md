@@ -58,7 +58,7 @@ The `GmailSearch` is used to do the actual look up in your inbox.
 Then in the `POST` function, right before the `tools` variable let's add a `gmailParams` and update the list of tools like this:
 
 ```ts
-// src/api/chat/route.ts
+// src/app/api/chat/route.ts
 // ...
 export async function POST(req: NextRequest) {
     // ...
@@ -113,7 +113,7 @@ The `GmailCreateDraft` is used to draft emails for you.
 Then in the `POST` function, update the `tools` variable land add the new draft tool like this:
 
 ```ts
-// src/api/chat/route.ts
+// src/app/api/chat/route.ts
 // ...
 export async function POST(req: NextRequest) {
     // ...
