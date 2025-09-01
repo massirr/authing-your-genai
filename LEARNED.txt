@@ -1,0 +1,34 @@
+What I Learned - LangChain and Auth0 Development Session
+========================================================
+
+## Dependency Management Issues
+- Encountered npm ERESOLVE dependency conflict between @langchain/core versions
+- @langchain/core@0.3.48 was installed but langchain@0.3.31 required >=0.3.58
+- Learned importance of keeping peer dependencies compatible
+- Solution: Update @langchain/core to latest version (>=0.3.58)
+
+## Git Configuration
+- Discovered that Git requires user identity configuration before making commits
+- Need to set both user.email and user.name globally or per repository
+- Commands needed:
+  - git config --global user.email "your-email@example.com"
+  - git config --global user.name "Your Name"
+- Without proper configuration, Git cannot auto-detect identity
+
+## LangChain Tool Integration
+- Successfully added Calculator tool from @langchain/community/tools/calculator
+- Implemented tool calling in a React agent using createReactAgent
+- Learned about LangGraph for building AI agent workflows
+- Used ChatOpenAI with gpt-4o-mini model for the language model
+
+## Development Environment
+- Working in a dev container with Debian GNU/Linux 12
+- Next.js application structure with TypeScript
+- Auth0 integration for authentication
+- Proper project structure with separated components, utils, and API routes
+
+## Key Takeaways
+- Always check dependency compatibility when adding new packages
+- Proper Git configuration is essential for version control
+- LangChain provides powerful tools for building AI agents
+- Development containers provide consistent development environments
