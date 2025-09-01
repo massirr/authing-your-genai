@@ -6,6 +6,8 @@ import { convertVercelMessageToLangChainMessage } from '@/utils/message-converte
 import { logToolCallsInDevelopment } from '@/utils/stream-logging';
 //during the workshop
 import { Calculator } from "@langchain/community/tools/calculator";
+import { withGoogleConnection, getAccessToken } from '@/lib/auth0-ai';
+import { GmailSearch, GmailCreateDraft } from '@langchain/community/tools/gmail';
 
 
 
@@ -28,8 +30,17 @@ export async function POST(req: NextRequest) {
       .filter((message: Message) => message.role === 'user' || message.role === 'assistant')
       .map(convertVercelMessageToLangChainMessage);
 
+    // Provide the access token to the Gmail tools
+    const gmailParams = {
+      credentials: {
+        accessToken: getAccessToken,
+      },
+    };
+
     const tools = [
-      new Calculator()
+      new Calculator(),
+      withGoogleConnection(new GmailSearch(gmailParams)),
+      withGoogleConnection(new GmailCreateDraft(gmailParams)),
     ];
 
     const llm = new ChatOpenAI({
