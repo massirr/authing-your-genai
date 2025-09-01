@@ -4,6 +4,9 @@ import { createReactAgent } from '@langchain/langgraph/prebuilt';
 import { ChatOpenAI } from '@langchain/openai';
 import { convertVercelMessageToLangChainMessage } from '@/utils/message-converters';
 import { logToolCallsInDevelopment } from '@/utils/stream-logging';
+//during the workshop
+import { Calculator } from "@langchain/community/tools/calculator";
+
 
 
 const AGENT_SYSTEM_TEMPLATE = `You are a personal assistant named Assistant0. You are a helpful assistant that can answer questions and help with tasks. You have access to a set of tools, use the tools as needed to answer the user's question.`;
@@ -25,6 +28,10 @@ export async function POST(req: NextRequest) {
       .filter((message: Message) => message.role === 'user' || message.role === 'assistant')
       .map(convertVercelMessageToLangChainMessage);
 
+    const tools = [
+      new Calculator()
+    ];
+
     const llm = new ChatOpenAI({
       model: 'gpt-4o-mini',
       temperature: 0,
@@ -35,7 +42,7 @@ export async function POST(req: NextRequest) {
      */
     const agent = createReactAgent({
       llm,
-      tools: [],
+      tools,
       // Modify the stock prompt in the prebuilt agent.
       prompt: AGENT_SYSTEM_TEMPLATE,
     });
